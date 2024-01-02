@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "privately-counting-distinct-elements"
+version = "0.1.0"
+description = "The code accompanying \"Counting Distinct Elements Under Person-Level Differential Privacy\" paper."
+authors = ["Alexander Knop, Thomas Steinke"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+scipy = "^1.11.4"
+nltk = "^3.8.1"
+diffprivlib = "^0.6.3"
+rich = "^13.7.0"
+absl-py = "^2.0.0"
+pandas = "^2.1.4"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.12.1"
+isort = "^5.13.2"
+mypy = "^1.8.0"
+ruff = "^0.1.10"
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
