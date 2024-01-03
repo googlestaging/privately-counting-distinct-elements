@@ -20,6 +20,7 @@ black = "^23.12.1"
 isort = "^5.13.2"
 mypy = "^1.8.0"
 ruff = "^0.1.10"
+pytest = "^7.4.4"
 
 [tool.isort]
 profile = "black"

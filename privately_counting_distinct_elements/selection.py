@@ -31,7 +31,7 @@ class GeneralizedExponential:
         epsilon: float,
         beta: float,
         sensitivity: Sequence[float] | float,
-        utility: list[float],
+        utility: Sequence[float],
     ):
         if not isinstance(sensitivity, Sequence):
             sensitivity = [sensitivity] * len(utility)
